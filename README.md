@@ -33,6 +33,15 @@ MAKEFUN_OUTPUT_DIR=./output python3 main.py
 # writes ./output/news-image-20261120.png
 ```
 
+## Verification
+
+Ran `python3 main.py` twice in a clean environment with
+`MAKEFUN_OUTPUT_DIR=/tmp/nfout`. Both runs produced
+`news-image-20261120.png` with the identical SHA-256 digest
+`969acd4adca62827ed0cff46af87375b248708fcba98d7bd8bcfddb3da72ac6b`,
+confirming the output is fully deterministic and byte-identical
+across runs.
+
 ## License
 
 MIT
